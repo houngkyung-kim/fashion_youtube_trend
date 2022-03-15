@@ -40,8 +40,8 @@ function App() {
       // console.log(dayInYear)
       // console.log(video.weekNumber);
       if (
-        dayInYear >= day-1 &&
-        dayInYear <= day+14 &&
+        dayInYear >= day+3 &&
+        dayInYear <= day+9 &&
         video.viewCount > 100000
       ) {
         filteredResult.push(video);
