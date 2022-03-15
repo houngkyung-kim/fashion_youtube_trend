@@ -4,6 +4,12 @@
   /* border: none; */
 }
 
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}
+
 .video {
   /* display: flex; */
   align-items: center;

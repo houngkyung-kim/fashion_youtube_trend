@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+.header{
+  margin-left: 0.5em;
+}
+
+.version {
+  margin-left: 1em;
+}
+
+.meta{
+  margin-left: 1em;
+}
