@@ -21,7 +21,9 @@ const VideoItem = ({ video }) => {
             <p className={styles.title}>{video.title}</p>
             <p className={styles.channel}>{video.channel}</p>
             <p className={styles.viewCount}>
-              조회수 {video.viewCount} · <span>{video["year-month-date"]}</span>
+              조회수 {(video.viewCount/1000).toFixed(1)}k · 
+              <span> 좋아요 {(video.likeCount/1000).toFixed(1)}k</span> · 
+              <span>{video["year-month-date"]}</span>
             </p>
           </a>
         </div>

@@ -1,0 +1,24 @@
+.navi {
+  /* border-bottom: "solid 1px";
+  padding-bottom: 1rem;
+   */
+  /* padding: 3rem; */
+  background-color: yellowgreen;
+}
+
+.navDiv {
+  /* margin: 10px; */
+  padding: 12px;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  margin: 0 10px;
+  padding: 0;
+}
+
+.link:hover {
+  cursor: pointer;
+}

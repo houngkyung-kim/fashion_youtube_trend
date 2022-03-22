@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
-import VideoList from "./components/video_list/video_list";
-import styles from "./app.module.css";
-import Navigation from "./components/navigation/navigation";
+import VideoList from "./video_list/video_list";
+import styles from "../app.module.css";
+import Navigation from "./navigation/navigation";
 
-function App() {
+function Recent() {
   const [videos, setVideos] = useState([]);
   // Get Week of Year
   const now = new Date();
+  const thisYear = now.getFullYear();
   const onejan = new Date(now.getFullYear(), 0, 1);
   const weekNumber =
     Math.ceil(
@@ -29,20 +30,24 @@ function App() {
     let filteredResult = [];
 
     try {
-      result = require("./collected.json");
+      result = require("../collected.json");
     } catch (error) {
       console.log(error);
     }
 
     for (const video of result) {
-      const myDate = new Date(video['year-month-date'])
+      const myDate = new Date(video["year-month-date"]);
       // console.log(myDate)
-      const dayInYear = Math.floor((myDate - new Date(myDate.getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24))
+      // console.log(myDate.getFullYear())
+      const dayInYear = Math.floor(
+        (myDate - new Date(myDate.getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24)
+      );
       // console.log(dayInYear)
       // console.log(video.weekNumber);
       if (
-        dayInYear >= day+3 
-        && dayInYear <= day+9 
+        dayInYear >= day - 10 //
+        && myDate.getFullYear() === thisYear
+        // && dayInYear <= day + 1  //
         && video.viewCount > 100000
       ) {
         filteredResult.push(video);
@@ -56,17 +61,17 @@ function App() {
   return (
     <>
       <Navigation />
-      <h1 className={styles.header}>Fashion Youtube 트렌드</h1>
+      <h1 className={styles.header}>최근 올라온 Fashion 영상</h1>
       {/* <span className={styles.version}>(v1.2, 2022-03-15 )</span> */}
       <p className={styles.meta}>
         오늘은 {now.toDateString()} ({weekNumber}주차) 입니다.
       </p>
       <p className={styles.meta}>
-        패션 유튜버들은 이맘 때즘 이런 영상들을 만들었습니다
+        패션 유튜버들은 최근 이런 영상들을 만들었습니다
       </p>
       <VideoList videos={videos} />
     </>
   );
 }
 
-export default App;
+export default Recent;
