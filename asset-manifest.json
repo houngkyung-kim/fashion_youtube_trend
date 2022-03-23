@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/fashion_youtube_trend/static/css/main.205d33e3.css",
-    "main.js": "/fashion_youtube_trend/static/js/main.d432e02b.js",
+    "main.js": "/fashion_youtube_trend/static/js/main.396b85a5.js",
     "index.html": "/fashion_youtube_trend/index.html",
     "main.205d33e3.css.map": "/fashion_youtube_trend/static/css/main.205d33e3.css.map",
-    "main.d432e02b.js.map": "/fashion_youtube_trend/static/js/main.d432e02b.js.map"
+    "main.396b85a5.js.map": "/fashion_youtube_trend/static/js/main.396b85a5.js.map"
   },
   "entrypoints": [
     "static/css/main.205d33e3.css",
-    "static/js/main.d432e02b.js"
+    "static/js/main.396b85a5.js"
   ]
 }
