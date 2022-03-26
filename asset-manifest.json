@@ -1,13 +1,25 @@
 {
   "files": {
-    "main.css": "/fashion_youtube_trend/static/css/main.50feed18.css",
-    "main.js": "/fashion_youtube_trend/static/js/main.025a7302.js",
+    "main.css": "/fashion_youtube_trend/static/css/main.87ed8fca.css",
+    "main.js": "/fashion_youtube_trend/static/js/main.2b568cb0.js",
+    "static/media/cloud_07.png": "/fashion_youtube_trend/static/media/cloud_07.cf196b7a84fd4b7a1412.png",
+    "static/media/cloud_11.png": "/fashion_youtube_trend/static/media/cloud_11.b7705e9d6fe749b69d75.png",
+    "static/media/cloud_12.png": "/fashion_youtube_trend/static/media/cloud_12.cfe144ae4db339babfe3.png",
+    "static/media/cloud_05.png": "/fashion_youtube_trend/static/media/cloud_05.0673c27957f61c8a06f8.png",
+    "static/media/cloud_09.png": "/fashion_youtube_trend/static/media/cloud_09.888dec5718f4a4e66cd0.png",
+    "static/media/cloud_10.png": "/fashion_youtube_trend/static/media/cloud_10.dd83bc89eaaf8b18c066.png",
+    "static/media/cloud_03.png": "/fashion_youtube_trend/static/media/cloud_03.8317dc09973c87ad8055.png",
+    "static/media/cloud_06.png": "/fashion_youtube_trend/static/media/cloud_06.92e995d959a8896512a2.png",
+    "static/media/cloud_01.png": "/fashion_youtube_trend/static/media/cloud_01.0cd63959ffb06f59818a.png",
+    "static/media/cloud_04.png": "/fashion_youtube_trend/static/media/cloud_04.bc99a228069092d7abd0.png",
+    "static/media/cloud_08.png": "/fashion_youtube_trend/static/media/cloud_08.7a0171e4719713d3cab4.png",
+    "static/media/cloud_02.png": "/fashion_youtube_trend/static/media/cloud_02.d0c741c9587e0ffd7e4b.png",
     "index.html": "/fashion_youtube_trend/index.html",
-    "main.50feed18.css.map": "/fashion_youtube_trend/static/css/main.50feed18.css.map",
-    "main.025a7302.js.map": "/fashion_youtube_trend/static/js/main.025a7302.js.map"
+    "main.87ed8fca.css.map": "/fashion_youtube_trend/static/css/main.87ed8fca.css.map",
+    "main.2b568cb0.js.map": "/fashion_youtube_trend/static/js/main.2b568cb0.js.map"
   },
   "entrypoints": [
-    "static/css/main.50feed18.css",
-    "static/js/main.025a7302.js"
+    "static/css/main.87ed8fca.css",
+    "static/js/main.2b568cb0.js"
   ]
 }
