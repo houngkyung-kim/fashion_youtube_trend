@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/fashion_youtube_trend/static/css/main.855bd342.css",
-    "main.js": "/fashion_youtube_trend/static/js/main.89caea57.js",
-    "static/media/cloud_12.png": "/fashion_youtube_trend/static/media/cloud_12.7774c47ee79a3c8480c3.png",
-    "static/media/cloud_11.png": "/fashion_youtube_trend/static/media/cloud_11.a5190b4d9bc7a2102238.png",
-    "static/media/cloud_10.png": "/fashion_youtube_trend/static/media/cloud_10.f0a39f0f330c33c73088.png",
-    "static/media/cloud_06.png": "/fashion_youtube_trend/static/media/cloud_06.2aa0e73f41287f917faa.png",
-    "static/media/cloud_05.png": "/fashion_youtube_trend/static/media/cloud_05.28c5634247ec812dd6e7.png",
-    "static/media/cloud_09.png": "/fashion_youtube_trend/static/media/cloud_09.0596768599962cebd601.png",
-    "static/media/cloud_08.png": "/fashion_youtube_trend/static/media/cloud_08.a086cf50aeb6ca42d265.png",
-    "static/media/cloud_07.png": "/fashion_youtube_trend/static/media/cloud_07.c93cefc6d149e45a86dd.png",
-    "static/media/cloud_03.png": "/fashion_youtube_trend/static/media/cloud_03.185195ff89da067d8267.png",
-    "static/media/cloud_04.png": "/fashion_youtube_trend/static/media/cloud_04.2965790f38e4a80acea1.png",
-    "static/media/cloud_01.png": "/fashion_youtube_trend/static/media/cloud_01.48846d2594ad330a211e.png",
-    "static/media/cloud_02.png": "/fashion_youtube_trend/static/media/cloud_02.f0b1d16f7613cc4673ff.png",
+    "main.js": "/fashion_youtube_trend/static/js/main.1dfa9025.js",
+    "static/media/cloud_11.png": "/fashion_youtube_trend/static/media/cloud_11.0c23221c624641ed1719.png",
+    "static/media/cloud_06.png": "/fashion_youtube_trend/static/media/cloud_06.80a9bb82f38383e02d38.png",
+    "static/media/cloud_12.png": "/fashion_youtube_trend/static/media/cloud_12.94e99c714b65c59d8134.png",
+    "static/media/cloud_08.png": "/fashion_youtube_trend/static/media/cloud_08.33fbe78070d688cbf09c.png",
+    "static/media/cloud_07.png": "/fashion_youtube_trend/static/media/cloud_07.0a3184acceda790593de.png",
+    "static/media/cloud_09.png": "/fashion_youtube_trend/static/media/cloud_09.e3df4003490fe853438b.png",
+    "static/media/cloud_10.png": "/fashion_youtube_trend/static/media/cloud_10.0194c0c607fed37bb3ba.png",
+    "static/media/cloud_05.png": "/fashion_youtube_trend/static/media/cloud_05.623acc1452ae3b5dff65.png",
+    "static/media/cloud_03.png": "/fashion_youtube_trend/static/media/cloud_03.2b33799e82191cb78620.png",
+    "static/media/cloud_01.png": "/fashion_youtube_trend/static/media/cloud_01.44b69c75d621efb37df8.png",
+    "static/media/cloud_04.png": "/fashion_youtube_trend/static/media/cloud_04.2a31693563470d55e0ac.png",
+    "static/media/cloud_02.png": "/fashion_youtube_trend/static/media/cloud_02.c0f9bfc7b477c280a21b.png",
     "index.html": "/fashion_youtube_trend/index.html",
     "main.855bd342.css.map": "/fashion_youtube_trend/static/css/main.855bd342.css.map",
-    "main.89caea57.js.map": "/fashion_youtube_trend/static/js/main.89caea57.js.map"
+    "main.1dfa9025.js.map": "/fashion_youtube_trend/static/js/main.1dfa9025.js.map"
   },
   "entrypoints": [
     "static/css/main.855bd342.css",
-    "static/js/main.89caea57.js"
+    "static/js/main.1dfa9025.js"
   ]
 }
