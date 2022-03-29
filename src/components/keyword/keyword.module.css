@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+.header{
+  margin-left: 0.5em;
+}
+
+.version {
+  margin-left: 1em;
+}
+
+.meta{
+  margin-left: 1em;
+}
+
+/* .searchForm {
+
+} */
+
+.searchForm {
+  margin-top: 10px;
+}
+
+.searchInput {
+  font-size: 1em;
+  margin-right: 0.4em;
+  margin-left: 0.4em;
+  padding: 0.3em 0.5em;
+}
+
+.searchButton {
+  height: 100%;
+  font-size: 1em;
+  padding: 0.3em 0.5em;
+  background-color: green;
+  color: white;
+}
+

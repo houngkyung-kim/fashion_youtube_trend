@@ -15,6 +15,9 @@ const Navigation = () => {
         <Link className={styles.link} to="/keyword">
           <span>키워드</span>
         </Link>
+        <Link className={styles.link} to="/wordclouds">
+          <span>클라우드</span>
+        </Link>
       </div>
     </nav>
   );
