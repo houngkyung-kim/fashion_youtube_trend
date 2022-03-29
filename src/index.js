@@ -19,9 +19,10 @@ ReactDOM.render(
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Navigation />
       <Routes>
-        <Route path="/" element={<App youtube={youtube} />} />
+        <Route exact path="/" element={<App youtube={youtube} />} />
         <Route path="/recent" element={<Recent youtube={youtube} />} />
         <Route path="/keyword" element={<Keyword youtube={youtube} />} />
+        {/* <Route path="/keyword?q=:id" element={<Keyword youtube={youtube} />} /> */}
         <Route path="/wordclouds" element={<Wordclouds />} />
       </Routes>
     </BrowserRouter>

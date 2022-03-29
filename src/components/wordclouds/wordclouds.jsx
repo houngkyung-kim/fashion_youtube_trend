@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./wordclouds.module.css";
 
 function Wordclouds(props) {
@@ -23,7 +24,9 @@ function Wordclouds(props) {
           <div className={styles.cloudItem}>
             <p className={styles.month}>{mon.month}월</p>
             {mon.items.map((item) => (
-              <span>{item}·</span>
+              <Link className={styles.wordLink} to={"/keyword?q=" + item}> 
+                <span>{item}·</span>
+              </Link>
             ))}
             <img
               className={styles.cloudImage}
