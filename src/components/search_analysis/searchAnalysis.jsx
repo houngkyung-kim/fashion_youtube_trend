@@ -29,7 +29,7 @@ const SearchAnalysis = ({ results, videos }) => {
   const objdata = [];
   for (let i = 1; i < 13; i++) {
     let obj = { count: 3 };
-    const temp = month.filter((m) => m.month === i);
+    const temp = month.filter((m) => m.month === i-1);
     const length = temp.length;
     obj["name"] = i;
     obj["count"] = length;

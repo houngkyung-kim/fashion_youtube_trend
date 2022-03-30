@@ -58,23 +58,34 @@ class Youtube {
     return filteredResult;
   }
 
-  async search(keyword) {
+  async search(keyword, month) {
     // console.log(keyword);
     // console.log(keyword);
 
     let filteredResult = [];
     let searchResult = [];
+    // console.log(month)
 
     for (const video of this.youtube) {
       const title = video["title"];
+      const createdMonth = video["year-month-date"].split("-")[1];
+      // console.log(createdMonth)
       // console.log(title)
+
       if (
         title.search(keyword) >= 0 //
       ) {
         // console.log(title)
         searchResult.push(video);
-        if (video.viewCount > 100000) {
+        if (month === "") {
+          if (video.viewCount > 100000) {
+            filteredResult.push(video);
+          }
+        } else if (month === createdMonth) {
           filteredResult.push(video);
+          // if (video.viewCount > 100000) {
+          //   filteredResult.push(video);
+          // }
         }
       }
     }

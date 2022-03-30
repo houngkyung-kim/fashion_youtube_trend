@@ -37,3 +37,13 @@
   color: white;
 }
 
+.monthSelect {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* background-color: blue; */
+}
+
+.monthSelectButton {
+  margin: 5px 5px;
+}
