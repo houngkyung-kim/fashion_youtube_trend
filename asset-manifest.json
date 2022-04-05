@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/fashion_youtube_trend/static/css/main.ec95382b.css",
+    "main.css": "/fashion_youtube_trend/static/css/main.75c2921e.css",
     "main.js": "/fashion_youtube_trend/static/js/main.c66fd856.js",
     "static/media/cloud_11.png": "/fashion_youtube_trend/static/media/cloud_11.87dd115f3300c5c6f801.png",
     "static/media/cloud_06.png": "/fashion_youtube_trend/static/media/cloud_06.33ff2c97aea37570badc.png",
@@ -15,11 +15,11 @@
     "static/media/cloud_01.png": "/fashion_youtube_trend/static/media/cloud_01.44b69c75d621efb37df8.png",
     "static/media/cloud_02.png": "/fashion_youtube_trend/static/media/cloud_02.c0f9bfc7b477c280a21b.png",
     "index.html": "/fashion_youtube_trend/index.html",
-    "main.ec95382b.css.map": "/fashion_youtube_trend/static/css/main.ec95382b.css.map",
+    "main.75c2921e.css.map": "/fashion_youtube_trend/static/css/main.75c2921e.css.map",
     "main.c66fd856.js.map": "/fashion_youtube_trend/static/js/main.c66fd856.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec95382b.css",
+    "static/css/main.75c2921e.css",
     "static/js/main.c66fd856.js"
   ]
 }
