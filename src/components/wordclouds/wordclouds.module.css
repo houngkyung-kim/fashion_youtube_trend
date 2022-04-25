@@ -19,6 +19,15 @@
   text-align: center;
 }
 
+.monthLink {
+  text-decoration: none;
+  color: black;
+}
+
+.month:hover {
+  cursor: pointer;
+}
+
 .month {
   /* margin-left: 60px; */
   font-weight: 600;

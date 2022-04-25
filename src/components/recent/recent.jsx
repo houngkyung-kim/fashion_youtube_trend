@@ -2,15 +2,16 @@ import React, { useEffect, useState } from "react";
 import VideoList from "../video_list/video_list";
 import styles from "../../app.module.css";
 
-function Recent({ youtube }) {
+function Recent({ youtube, gen }) {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    youtube.recent().then((videos) => setVideos(videos));
-  }, [youtube]);
-
+    youtube.recent(gen).then((result) => setVideos(result));
+  }, [youtube, gen]);
+  
   return (
     <>
+
       <h1 className={styles.header}>최근 올라온 Fashion 영상</h1>
       {/* <span className={styles.version}>(v1.2, 2022-03-15 )</span> */}
       <p className={styles.meta}>

@@ -1,25 +1,220 @@
+.span{
+  line-height: 27px;
+  vertical-align: middle;
+
+}
+
 .navi {
   /* border-bottom: "solid 1px";
   padding-bottom: 1rem;
    */
   /* padding: 3rem; */
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
+  background-color: black;
 }
 
 .navDiv {
   display: flex;
   /* margin: 10px; */
   padding: 12px;
+
+  /* text-align: center; */
 }
 
 .link {
+  /* vertical-align: middle; */
   text-decoration: none;
   font-weight: 600;
-  color: black;
+  /* background-color: gold; */
+  color: white;
+  /* color: black; */
   margin: 0 10px;
   padding: 0;
 }
 
 .link:hover {
   cursor: pointer;
+}
+
+/* 
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 22px;
+  margin-left: 15px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+.slider {
+  border-radius: 34px;
+}
+
+.slider:before {
+  border-radius: 50%;
+} */
+
+/* .toggleButtonCover {
+  display: table-cell;
+  position: relative;
+  width: 200px;
+  height: 140px;
+  box-sizing: border-box;
+} */
+
+/* .buttonCover {
+  height: 100px;
+  margin: 20px;
+  background-color: #fff;
+  box-shadow: 0 10px 20px -8px #c5d6d6;
+  border-radius: 4px;
+} */
+/* .buttonCover:before {
+  counter-increment: button-counter;
+  content: counter(button-counter);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #d7e3e3;
+  font-size: 12px;
+  line-height: 1;
+  padding: 5px;
+} */
+/* .buttonCover, */
+.knobs,
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  top: 50%;
+  /* width: 74px; */
+  /* height: 36px; */
+  /* margin: -20px auto 0 auto; */
+  width: 50px;
+  height: 27px;
+
+  margin-left: 15px;
+  /* margin-top: 0; */
+  overflow: hidden;
+}
+
+.button,
+.layer {
+  /* border-radius: 100px; */
+  border-radius: 75px;
+}
+
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.knobs {
+  z-index: 2;
+}
+
+.layer {
+  width: 100%;
+  background-color: #ebf7fc;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+/* Button 1 */
+.knobs:before {
+  content: "여";
+  position: absolute;
+  /* top: 4px; */
+  /* left: 4px; */
+  /* width: 20px; */
+  /* height: 10px; */
+  /* font-size: 10px; */
+  top: 3px;
+  left: 3px;
+  width: 15px;
+  height: 7.5px;
+  font-size: 10px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  /* padding: 9px 4px; */
+  padding: 7px 3px;
+  background-color: #03a9f4;
+  border-radius: 50%;
+  transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+
+.checkbox:checked + .knobs:before {
+  content: "남";
+  /* left: 42px; */
+  left: 26px;
+  background-color: #f44336;
+}
+
+.checkbox:checked ~ .layer {
+  background-color: #fcebeb;
+}
+
+.knobs,
+.knobs:before,
+.layer {
+  transition: 0.3s ease all;
 }

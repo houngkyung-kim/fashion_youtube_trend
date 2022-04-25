@@ -1,27 +1,50 @@
-import React, { useEffect, useState } from "react";
-import VideoList from "./components/video_list/video_list";
+import React, { useState } from "react";
 import styles from "./app.module.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./components/home/home";
+import Recent from "./components/recent/recent";
+import Keyword from "./components/keyword/keyword";
+import Wordclouds from "./components/wordclouds/wordclouds";
+import Monthly from "./components/monthly/monthly";
+import Navigation from "./components/navigation/navigation";
 
-function App({youtube}) {
-  const [videos, setVideos] = useState([]);
+function App({ youtube, collected_women, collected_men, arr }) {
+  const [gen, setGen] = useState("women");
 
-  useEffect(() => {
-    youtube.mostPopular().then((videos) => setVideos(videos));
-  }, [youtube]);
-
+  const changeGender = (gender) => {
+    if (gender === "women") {
+      setGen("men");
+    } else {
+      setGen("women");
+    }
+  };
 
   return (
-    <>
-      <h1 className={styles.header}>Fashion Youtube 트렌드</h1>
-      {/* <span className={styles.version}>(v1.2, 2022-03-15 )</span> */}
-      <p className={styles.meta}>
-        오늘은 {youtube.now.toDateString()} ({youtube.weekNumber}주차) 입니다.
-      </p>
-      <p className={styles.meta}>
-        패션 유튜버들은 이맘 때즘 이런 영상들을 만들었습니다
-      </p>
-      <VideoList videos={videos} />
-    </>
+    <div className={styles.app}>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Navigation changeGender={changeGender} gen={gen}/>
+        <Routes>
+          <Route
+            exact
+            path="/"
+            element={
+              <Home
+                youtube={youtube}
+                gen={gen}
+              />
+            }
+          />
+          <Route path="/recent" element={<Recent youtube={youtube} gen={gen} />} />
+          <Route path="/keyword" element={<Keyword youtube={youtube} gen={gen} />} />
+          <Route
+            path="/monthly/:id"
+            element={<Monthly arr={arr} youtube={youtube} gen={gen} />}
+          />
+          {/* <Route path="/keyword?q=:id" element={<Keyword youtube={youtube} />} /> */}
+          <Route path="/wordclouds" element={<Wordclouds arr={arr} gen={gen} />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 

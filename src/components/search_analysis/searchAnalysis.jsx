@@ -47,18 +47,18 @@ const SearchAnalysis = ({ results, videos }) => {
   // console.log(data);
   // console.log(objdata);
 
-  const renderCustomBarLabel = ({ payload, x, y, width, height, value }) => {
-    console.log(value);
-    return (
-      <text
-        x={x + width / 2}
-        y={y}
-        fill="#666"
-        textAnchor="middle"
-        dy={-6}
-      >{`${value}`}</text>
-    );
-  };
+  // const renderCustomBarLabel = ({ payload, x, y, width, height, value }) => {
+  //   console.log(value);
+  //   return (
+  //     <text
+  //       x={x + width / 2}
+  //       y={y}
+  //       fill="#666"
+  //       textAnchor="middle"
+  //       dy={-6}
+  //     >{`${value}`}</text>
+  //   );
+  // };
 
   return (
     <>
@@ -89,7 +89,7 @@ const SearchAnalysis = ({ results, videos }) => {
         <h3>월별 영상 총 조회수</h3>
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart
-            width={500}
+            width={100}
             height={400}
             data={objdata}
             margin={{

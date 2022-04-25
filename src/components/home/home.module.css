@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+.header{
+  margin-left: 0.5em;
+}
+
+.version {
+  margin-left: 1em;
+}
+
+.meta{
+  margin-left: 1em;
+}
+
+.wordLink {
+  text-decoration: none;
+  /* font-weight: 600; */
+  /* color: navy; */
+  /* margin: 0 10px; */
+  padding: 0;
+}
+
+.item {
+  text-decoration: none;
+  font-weight: 500;
+  color: darkblue;
+}
